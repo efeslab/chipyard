@@ -8,6 +8,14 @@ import freechips.rocketchip.config.{Config}
 // Heterogenous Configs
 // ---------------------
 
+class TutorialSmallBoomConfig extends Config(
+  new WithTop ++
+  new WithBoomROM ++
+  new freechips.rocketchip.subsystem.WithInclusiveCache ++
+  new boom.common.WithSmallBooms ++
+  new boom.common.WithNBoomCores(1) ++
+  new freechips.rocketchip.system.BaseConfig)
+
 class LargeBoomAndRocketConfig extends Config(
   new WithTop ++                                           // default top
   new WithBootROM ++                                       // default bootrom
