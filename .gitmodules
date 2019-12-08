@@ -12,7 +12,7 @@
 	url = https://github.com/freechipsproject/chisel3.git
 [submodule "tools/firrtl"]
 	path = tools/firrtl
-	url = https://github.com/freechipsproject/firrtl
+	url = https://github.com/efeslab/firrtl.git
 [submodule "tools/torture"]
 	path = tools/torture
 	url = https://github.com/ucb-bar/riscv-torture.git
