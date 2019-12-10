@@ -134,8 +134,8 @@ sim_common_files           ?= $(build_dir)/sim_files.common.f
 #########################################################################################
 # java arguments used in sbt
 #########################################################################################
-JAVA_HEAP_SIZE ?= 8G
-JAVA_ARGS ?= -Xmx$(JAVA_HEAP_SIZE) -Xss8M -XX:MaxPermSize=256M
+JAVA_HEAP_SIZE ?= 32G
+JAVA_ARGS ?= -Xmx$(JAVA_HEAP_SIZE) -Xss8G -XX:MaxPermSize=256M
 
 #########################################################################################
 # default sbt launch command
